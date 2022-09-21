@@ -1,0 +1,43 @@
+What is in this folder?
+1. Edits to the BRONCO mod available on the Split Air discord.  All credit to the mod creators for the original code base.
+2. Weapons EDM and reference from the MB 339 PAN mod originally available here (not altered just referenced): https://forum.dcs.world/topic/209209-mb-339apan-by-frecce-tricolori-virtuali-only-compatible-with-dcs-world-256/  Note that the free mod is no longer available.
+3. EDMs for the paratroop models which came from Patrick and Eric's C-130 mod originally available here: https://www.digitalcombatsimulator.com/en/files/3301110/
+4. A modification of the splash damage script to recognize paratroops that touch ground and use them to spawn troops through MIST. Original source script available here: https://forum.dcs.world/topic/289290-splash-damage-20-script-make-explosions-better/
+5. Modifications cross-references and stuff jammed together. Its a custom work in progress to use at your own risk and not distribute. Expect crashes including crash to desktop, that said we have fun with it.  Everything sourced from freely available community mods or our own effort and offered back to the community for the same purpose.
+
+What do I require before adding this?
+1. BRONCO mod V1.00 Available from Split Air Discord
+2. MIST (Tested with version 4.4.90) available here: https://github.com/mrSkortch/MissionScriptingTools
+
+****************
+****************
+
+HOW DO I LOAD IT?
+1. Make a backup of your Mods/Aircraft/BRONCO V1.00 folder in case anything goes wrong or you put the files in the wrong place...
+2. Copy the contents of BRONCO_patch_big and paste into your Mods/Aircraft/BRONCO V1.00 folder. You should see a bunch of similar folders and files inside both locations, windows will ask if you want to replace files, say YES!
+3. Save the para-spawner.lua script to a folder where you put other mission scripts, for example ...Saved Games/DCS/scripts.  
+
+HOW DO I ADD IT TO A MISSION?
+1. Create a mission, add a BRONCO
+2. add a trigger to add the MIST script as detailed here: https://wiki.hoggitworld.com/view/Mission_Scripting_Tools_Documentation
+ Basically you create a trigger, call it "Load MIST" - Use Condition: TIME MORE 5 - Use Action: DO SCRIPT mist_4_4_90.lua (found by browsing to the script)
+3. Add a trigger to add the para-spawner.lua script using the same process as you did for MIST but with condition TIME MORE 10 and action DO SCRIPT para-spawner.lua
+
+HOW DO I DROP PARATROOPS?
+1. Take off, fly somewhere at >600 ft AGL, < ~120 kts, and stay level (<+/-500 fps climb/dive)
+1. Put the Interval switch to "2.0" (Imagine this as a door control)
+2. Press Weapon Release up to 5 times.
+3. Watch external view to see paratroops fall out the back.
+
+****************
+****************
+
+Something went wrong! 
+
+Check that you can load a BRONCO station 8 with paratroops under the "Bomb" subcategory. If not the patch isn't loaded correctly.
+Check that you can drop paratroops using the "Interval set to 2.0" press pickle step. If you are in parameters for a drop as described above you should see a message "GO!", if not you should be told how to correct your drop attitude.
+Check that paratroops that hit the ground spawn a unit. If they don't then the either MIST is not loaded, the para-spawner.lua script is not loaded, or the server BRONCO is not patched which means the paratroop model isn't recognized by the other two scripts.
+
+dcs.log is also a good resource for figuring out what went wrong.
+
+*** This ia a complex combination of 3 other mods literally anything could break it's functionality, the code is undocumented and there is no support for it! The steps above should help but be aware that you should know your way around the lua to fix anything that breaks! ***

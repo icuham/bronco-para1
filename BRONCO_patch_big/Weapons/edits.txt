@@ -1,0 +1,2 @@
+Changes to OV10_Weapons.lua to create paratroops
+Added shape/AIRBORNE.edm and shape/AIRBORNE2.edm because I don't know which folder they are pulled from
