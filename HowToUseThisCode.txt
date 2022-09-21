@@ -1,7 +1,7 @@
 What is in this folder?
 1. Edits to the BRONCO mod available on the Split Air discord.  All credit to the mod creators for the original code base.
 2. Weapons EDM and reference from the MB 339 PAN mod originally available here (not altered just referenced): https://forum.dcs.world/topic/209209-mb-339apan-by-frecce-tricolori-virtuali-only-compatible-with-dcs-world-256/  Note that the free mod is no longer available.
-3. EDMs for the paratroop models which came from Patrick and Eric's C-130 mod originally available here: https://www.digitalcombatsimulator.com/en/files/3301110/
+3. EDMs for the paratroop models which came from Patrick and Eric's C-130 mod originally available here: https://www.digitalcombatsimulator.com/en/files/3301110/  I collected them from the C-47 mod available here: https://www.digitalcombatsimulator.com/en/files/3302332/ and this mod uses code from Emmanuel Baranger under a creative commons license. Credit to all of these contributors for the underlying framework.
 4. A modification of the splash damage script to recognize paratroops that touch ground and use them to spawn troops through MIST. Original source script available here: https://forum.dcs.world/topic/289290-splash-damage-20-script-make-explosions-better/
 5. Modifications cross-references and stuff jammed together. Its a custom work in progress to use at your own risk and not distribute. Expect crashes including crash to desktop, that said we have fun with it.  Everything sourced from freely available community mods or our own effort and offered back to the community for the same purpose.
 
